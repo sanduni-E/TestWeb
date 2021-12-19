@@ -101,7 +101,7 @@ i {
 
 /*---navbar start-------*/
 .nav-bar {
-  margin: 50px auto;
+  margin: 10px auto;
   width: 100%;
   padding: 1rem 0;
   background-color: rgba(39, 89, 171, 1);
@@ -144,7 +144,6 @@ i {
   margin-right: auto;
 }
 .btn-first {
-  font-family: Nunito-SemiBold;
   font-size: 18px;
   font-style: normal;
   font-weight: normal;
@@ -162,7 +161,7 @@ i {
   width: 100%;
   color: rgba(255, 255, 255, 1);
   position: absolute;
-  top: 52%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -170,6 +169,7 @@ i {
 .main_text h1 {
   font-size: 20px;
   line-height: 10px;
+  font-weight: normal;
 }
 .main_text h2 {
   font-weight: bold;
@@ -283,6 +283,7 @@ section.business__section {
 .card__img---body p {
   margin-top: 10px;
   font-size: 14px;
+  font-weight: 400;
 }
 .card .card2 {
   background-color: #fff;
@@ -368,9 +369,24 @@ section.testimonials {
   background-color: #f59019;
 }
 
+.profile-name {
+  font-size: 20px;
+}
+
+.profile-name span{
+  font-size: 14px;
+}
+
 .profile__header {
   display: flex;
   margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.profile__header h2{
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .profile__picture {
@@ -477,6 +493,34 @@ section.testimonials {
   box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.17);
 }
 
+.input-container {
+	padding-bottom: 1em;
+}
+
+input {
+  width: 100%;
+  padding: 1em !important;
+  margin: 0em !important;
+  box-sizing: border-box;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 35px !important;
+}
+.right-inner-addon i {
+  color: #2759ab;
+  position: absolute;
+  right: 120px;
+  padding: 12px 12px;
+  pointer-events: none;
+  top: -5px;
+  font-size: 35px;
+}
+
+
 /*------Footer--------*/
 
 .footer {
@@ -510,19 +554,19 @@ ul {
 .footer-col ul li a:hover {
   color: #fff;
 }
-.footer-col .social a {
+.footer-col-1 .social a {
   display: inline-block;
   height: 40px;
   width: 40px;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 10px 10px 0;
   text-align: center;
-  line-height: 40px;
   color: #fff;
   margin-top: 40px;
+  transform: rotate(45deg);
+  margin-right: 35px;
 }
 
-.footer-col p {
+.footer-col-1 p {
   margin-top: 20px;
   color: #fff;
   font-weight: normal;
@@ -530,9 +574,17 @@ ul {
 }
 
 .flex-container > .footer-col-1 {
-  width: 40%;
+  width: 55%;
 }
 
 .flex-container > .footer-col {
   width: 25%;
+}
+
+a.social-icon:hover {
+  background-color: #2759ab;
+}
+
+a.social-icon i {
+  transform: rotate(-45deg);
 }
